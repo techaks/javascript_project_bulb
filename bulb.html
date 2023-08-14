@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB ON/OFF</title>
+    <style>
+        *{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#bulb{
+height: 250px;
+width: 150px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+
+
+width: 70px;
+height: 70px;
+margin: 10px;
+}
+#btn1{
+    background-color: green;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+#btn2{
+    background-color: rgb(228, 26, 12);
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+#btn1:hover{
+    font-size: 1.5rem; ;
+}
+#btn2:hover{
+    font-size: 1.5rem; ;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <h1>BULB ON OFF !</h1>
+        
+           <img id="bulb" src="https://m.media-amazon.com/images/I/31h-c7ILO2L._AC_UF894,1000_QL80_.jpg" alt="">
+        
+        <button id="btn1" onclick="on()">ON</button>
+        <button id="btn2" onclick="off()">OFF</button>
+    </div>
+</div>
+    
+<script>
+   function on(){
+    document.getElementById('bulb').src='https://m.media-amazon.com/images/I/61pTXt1VwgL._AC_UF894,1000_QL80_.jpg';
+    }
+    function off(){
+    document.getElementById('bulb').src='https://m.media-amazon.com/images/I/31h-c7ILO2L._AC_UF894,1000_QL80_.jpg';
+    }
+</script>
+</body>
+</html>
